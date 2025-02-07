@@ -14,10 +14,10 @@ button:active{
 .search {
     flex: 1;
     width:0;
-    font: 10px;
+    font: 18px;
+    padding-left: 10px;
     margin-left: 10px;
     border-style: solid;
-    height: 33px;
     border-width: 2px;
     border-color: rgb(172, 172, 172);
     border-radius: 0;
@@ -34,8 +34,8 @@ button:active{
 }
 .search::placeholder {
     font-family: Roboto, Arial;
-    font-size: 18px;
-
+    font-size: 16px;
+    padding-left: 5px;
 }
 
 .left-section{
