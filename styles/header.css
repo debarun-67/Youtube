@@ -4,6 +4,17 @@
     justify-content: space-between;
     align-items: center;
     border-bottom-color: grey;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right:0px;
+    height: 50px;
+    background-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(196, 193, 193);
+    border-bottom-width: 1px;
 }
 button:hover {
     cursor: pointer;
@@ -11,6 +22,10 @@ button:hover {
 button:active{
     background-color: rgb(214, 214, 214);
 }
+
+
+
+
 .search {
     flex: 1;
     width:0;
@@ -19,15 +34,15 @@ button:active{
     margin-left: 10px;
     border-style: solid;
     border-width: 2px;
-    border-color: rgb(172, 172, 172);
+    border-color: rgb(207, 207, 207);
     border-radius: 0;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .search:active {
-    border-color: lightblue;
-    border-start-start-radius: 2px;
+    border-color: rgb(62, 169, 204);
+    border-start-start-radius: 20px;
 }
 .search:hover{
     cursor: pointer;
@@ -78,8 +93,8 @@ button:active{
     border-color: rgb(172, 172, 172);
     border-width:2px;
     border-left-width: 0;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     min-width: 70px;
 }
 
