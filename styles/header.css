@@ -1,5 +1,5 @@
 .header{
-    height: 56px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +15,7 @@
     border-bottom-style: solid;
     border-bottom-color: rgb(196, 193, 193);
     border-bottom-width: 1px;
+    z-index:100; 
 }
 button:hover {
     cursor: pointer;
@@ -32,9 +33,7 @@ button:active{
     font: 18px;
     padding-left: 10px;
     margin-left: 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(207, 207, 207);
+    border: 2px solid rgb(207, 207, 207);
     border-radius: 0;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
     border-top-left-radius: 20px;
@@ -48,7 +47,6 @@ button:active{
     cursor: pointer;
 }
 .search::placeholder {
-    font-family: Roboto, Arial;
     font-size: 16px;
     padding-left: 5px;
 }
@@ -76,11 +74,12 @@ button:active{
 
 .hamburger-menu {
     height: 25px;
+    margin-left: 16px
 }
 
 .youtube-logo {
     height: 25px;
-    margin-left: 27px
+    margin-left: 40px
 }
 
 .search-icon {
@@ -96,6 +95,47 @@ button:active{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     min-width: 70px;
+
+
+}
+
+.search-button, .voice-search-button,
+.icon-container,
+.notification-icon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-button .tooltip , 
+.voice-search-button .tooltip ,
+.icon-container .tooltip,
+.notification-icon-container .tooltip
+{
+    position: absolute;
+    background-color: rgb(174, 173, 173);
+    padding-left:4px;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 4px;
+    font-size: 13px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    
+}
+
+.search-button:hover .tooltip ,
+.voice-search-button:hover .tooltip,
+.icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip
+{
+    opacity: 1;
 }
 
 .voice-search-button {
@@ -108,18 +148,38 @@ button:active{
 
 .voice-search-icon {
     width: 25px;
-    margin-top: 4px;
+
 }
 
 .upload-icon{
     width: 25px;
 }
 .youtube-apps{
-    width: 23px;
+    width: 25px;
 }
 .notification{
     width: 25px;
 }
+
+.notification-icon-container{
+    position: relative;
+}
+
+.notifications-count{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+    top: 1px;
+    right: -7px;
+    background-color: rgb(204, 33, 33);
+    color: white;
+}
+
 .account-profile{
     width:34px;
     border-radius: 34px;
